@@ -6,7 +6,7 @@ public with sharing class OpportunityController {
         return OpportunityService.getEnterOrNotValues();
     }
     
-    // 민재
+    // 창환
     @AuraEnabled(cacheable=true)
     public static List<Opportunity> getOpportunitiesByStatus(String status) {
         return OpportunityRepository.getOpportunitiesByStatus(status);
