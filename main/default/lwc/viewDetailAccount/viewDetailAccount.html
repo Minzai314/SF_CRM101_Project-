@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="매장 정보" icon-name="standard:account" variant="base">
+
+
+
+        <template if:true={storeId}>
+            <div class="slds-grid slds-grid_align-end slds-var-p-horizontal_small">
+                <lightning-button label="상세보기" title="NavigateToRecordPage" onclick={handleClickDetailBtn}
+                    class="slds-var-m-right_x-small"></lightning-button>
+            </div>
+            <div class="slds-scrollable_y fixed-height slds-var-p-around_small">
+                <lightning-record-form record-id={storeId} object-api-name="Account" fields={fields} mode="readonly">
+                </lightning-record-form>
+            </div>
+        </template>
+        <template if:false={storeId}>
+            <div class="fixed-height slds-align_absolute-center">
+                <p>매장을 선택해주세요.</p>
+            </div>
+        </template>
+    </lightning-card>
+</template>

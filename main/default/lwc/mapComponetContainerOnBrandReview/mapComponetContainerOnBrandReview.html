@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-1 slds-var-m-bottom_small">
+            <c-floor-map onselectstore={handleSelectStore} ondatechange={handleDateChange}
+                onfloorchange={handleFloorChange}></c-floor-map>
+        </div>
+
+        <div class="slds-col slds-size_1-of-1">
+            <div class="slds-grid slds-wrap slds-gutters">
+
+                <div class="slds-col slds-size_1-of-2 ">
+                    <c-view-detail-account store-id={selectedStoreId}></c-view-detail-account>
+                </div>
+
+                <div class="slds-col slds-size_1-of-2 ">
+                    <c-search-oppty product-id={selectedProductId}></c-search-oppty>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>

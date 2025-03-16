@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-box slds-m-around_medium slds-p-around_medium">
+        <h1 class="slds-text-heading_large slds-text-align_center">자주 묻는 질문 (FAQ)</h1>
+
+        <ul class="slds-list_vertical slds-has-dividers_bottom-space slds-m-top_large">
+            <template for:each={faqs} for:item="faq">
+                <li key={faq.question} class="slds-item slds-p-vertical_medium">
+                    <p class="slds-text-title_bold">🔹 {faq.question}</p>
+                    <template for:each={faq.answer} for:item="line">
+                        <p key={line} class="slds-text-body_regular slds-m-top_x-small">{line}</p>
+                    </template>
+                </li>
+            </template>
+        </ul>
+    </div>
+</template>

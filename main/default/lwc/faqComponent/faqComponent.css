@@ -1,0 +1,61 @@
+/* 전체 컨테이너 스타일 */
+.slds-box {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 스타일 */
+.slds-text-heading_large {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* FAQ 리스트 스타일 */
+.slds-list_vertical {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* FAQ 항목 스타일 */
+.slds-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+/* 질문 텍스트 스타일 */
+.slds-text-title_bold {
+    color: #2b5da4;
+    font-size: 16px;
+}
+
+/* 답변 텍스트 스타일 */
+.slds-text-body_regular {
+    font-size: 14px;
+    color: #333;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .slds-box {
+        padding: 1rem;
+    }
+    .slds-text-title_bold {
+        font-size: 16px;
+    }
+    .slds-text-body_regular {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .slds-text-title_bold {
+        font-size: 15px;
+    }
+    .slds-text-body_regular {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,66 @@
+.svg-container {
+    
+    height: 100%;
+}
+
+.facility-logo {
+    font-size: 8px;
+    fill: #4f5a57;
+    pointer-events: none;
+    text-anchor: middle;
+    font-family: "Salesforce Sans", Arial, sans-serif;
+}
+
+.frame {
+    fill: none;
+    
+}
+
+.back-ground {
+    fill: #fff;
+}
+
+.facility {
+    fill: #73c7a4;
+}
+
+.facility-stores {
+    fill: #e7d2e6;
+}
+
+.all-stores {
+    fill: #dcdcdc;
+}
+.pop-up{
+    fill: rgb(156, 174, 214)
+}
+.selected-store{
+    fill: #867272
+}
+
+
+
+.all-stores rect:hover,
+.all-stores polygon:hover,
+.all-stores path:hover {
+    fill: #888888 !important;
+    cursor: pointer;
+}
+
+.text-group {
+    font-size: 6px;
+    font-weight: bold;
+    fill:rgb(72, 67, 67);
+    pointer-events: none;
+    text-anchor: middle;
+    font-family: "Salesforce Sans", Arial, sans-serif;
+}
+
+.zoom-controls {
+    bottom: 25px;
+    right: 10px;
+    border-radius: 5px;
+}
+  .map-wrapper {
+    overflow: hidden; 
+  }
